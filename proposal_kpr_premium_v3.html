@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proposal Penawaran Komersial Premium: Transformasi Digital Simulasi Kelayakan KPR</title>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap");
+
+  :root {
+    --primary-color: #1a237e; /* Midnight Blue */
+    --secondary-color: #2196f3; /* Electric Blue */
+    --accent-color: #ffc107; /* Gold Accent */
+    --text-color: #333;
+    --light-gray: #f8f8f8;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #666;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif; /* Modern, readable font */
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 11pt;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Stronger headings */
+    color: var(--primary-color);
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+  }
+
+  h1 {
+    font-size: 2.8em;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    border-bottom: 2px solid var(--medium-gray);
+    padding-bottom: 0.5em;
+    color: var(--primary-color);
+  }
+
+  h3 {
+    font-size: 1.6em;
+    color: var(--secondary-color);
+    margin-top: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-top: 1.2em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    border: 1px solid var(--medium-gray);
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--light-gray);
+  }
+
+  blockquote {
+    border-left: 5px solid var(--accent-color);
+    margin: 1.5em 0;
+    padding: 0.8em 1.5em;
+    background-color: #fffde7; /* Light yellow background */
+    color: #555;
+    font-style: italic;
+  }
+
+  .cover-page {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cover-page h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .cover-page h2 {
+    font-size: 2.8em;
+    color: #fff;
+    margin-bottom: 40px;
+    border-bottom: none;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .cover-page p {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .cover-page .client-name {
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+
+  .contact-info {
+    margin-top: 60px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px 30px;
+    border-radius: 8px;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .section-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .image-container {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--medium-gray);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+
+  .pricing-card {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 2em 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .pricing-card h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .pricing-card .price-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--medium-gray);
+  }
+
+  .pricing-card .price-detail:last-of-type {
+    border-bottom: none;
+  }
+
+  .pricing-card .total-price {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    border-top: 2px solid var(--secondary-color);
+  }
+
+  .payment-terms {
+    margin-top: 2em;
+    padding: 15px;
+    background-color: var(--light-gray);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 2px solid var(--medium-gray);
+    color: #777;
+    font-size: 0.9em;
+  }
+
+  .footer-section strong {
+    color: var(--primary-color);
+  }
+
+  .footer-section .branding {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-top: 0.5em;
+  }
+
+  .timeline-table th {
+    background-color: var(--secondary-color);
+  }
+
+  .timeline-table tr:nth-child(even) {
+    background-color: #e3f2fd; /* Light blue for even rows */
+  }
+
+  .list-item-bold li strong { color: var(--primary-color); }
+
+  .callout {
+    background-color: #e0f2f7; /* Light blue background */
+    border-left: 6px solid var(--secondary-color);
+    padding: 15px 20px;
+    margin: 1.5em 0;
+    border-radius: 5px;
+    font-style: italic;
+    color: #444;
+  }
+
+  .roadmap-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2em;
+    justify-content: center;
+  }
+
+  .roadmap-card {
+    flex: 1 1 calc(33% - 40px);
+    min-width: 250px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .roadmap-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .roadmap-card h4 {
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-top: 0;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .roadmap-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .roadmap-card ul li {
+    margin-bottom: 8px;
+    color: #555;
+  }
+
+  .roadmap-card ul li::before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover-page">
+  <h1>PROPOSAL PENAWARAN KOMERSIAL PREMIUM</h1>
+  <h2>TRANSFORMASI DIGITAL SIMULASI KELAYAKAN KPR</h2>
+  <p>Untuk: <span class="client-name">**Mas Herry Wijaya**</span></p>
+  <p>Dari: **Ibra Decode**</p>
+  <p>Tanggal: 10 Juni 2026</p>
+  <div class="contact-info">
+    <p>Ibra Decode</p>
+    <p>Email: support@ibracode.dev</p>
+    <p>Telepon: +62 857 9282 0173</p>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<div class="container">
+
+<h2 class="section-header">DAFTAR ISI</h2>
+
+<ol>
+  <li><a href="#executive-summary">Executive Summary</a></li>
+  <li><a href="#permasalahan-saat-ini">Permasalahan Saat Ini</a></li>
+  <li><a href="#solusi-yang-kami-tawarkan">Solusi yang Kami Tawarkan</a></li>
+  <li><a href="#manfaat-bisnis-yang-akan-diperoleh">Manfaat Bisnis yang Akan Diperoleh</a></li>
+  <li><a href="#keunggulan-sistem-kami-dibanding-excel">Keunggulan Sistem Kami Dibanding Excel</a></li>
+  <li><a href="#gambaran-alur-sistem">Gambaran Alur Sistem</a></li>
+  <li><a href="#ruang-lingkup-pekerjaan">Ruang Lingkup Pekerjaan</a>
+    <ol type="a">
+      <li><a href="#termasuk-dalam-pekerjaan">Termasuk dalam Pekerjaan</a></li>
+      <li><a href="#tidak-termasuk-dalam-pekerjaan">Tidak Termasuk dalam Pekerjaan</a></li>
+    </ol>
+  </li>
+  <li><a href="#hak-akses-pengguna">Hak Akses Pengguna</a></li>
+  <li><a href="#fitur-utama-sistem-tahap-1">Fitur Utama Sistem (Tahap 1)</a></li>
+  <li><a href="#timeline-pengerjaan">Timeline Pengerjaan</a></li>
+  <li><a href="#investasi-dan-ketentuan-pembayaran">Investasi dan Ketentuan Pembayaran</a>
+    <ol type="a">
+      <li><a href="#rincian-investasi">Rincian Investasi</a></li>
+      <li><a href="#ketentuan-pembayaran">Ketentuan Pembayaran</a></li>
+    </ol>
+  </li>
+  <li><a href="#garansi-dan-ketentuan-revisi">Garansi dan Ketentuan Revisi</a></li>
+  <li><a href="#roadmap-pengembangan-sistem-jangka-panjang">Roadmap Pengembangan Sistem Jangka Panjang</a></li>
+  <li><a href="#penutup-profesional">Penutup Profesional</a></li>
+</ol>
+
+<div class="page-break"></div>
+
+<h2 id="executive-summary" class="section-header">1. Executive Summary</h2>
+
+Sebagai seorang pemilik bisnis properti, Anda memahami betul bahwa kecepatan, akurasi, dan efisiensi adalah kunci dalam setiap transaksi. Proses simulasi kelayakan Kredit Pemilikan Rumah (KPR) yang masih mengandalkan *spreadsheet* (Excel) saat ini, meskipun familiar, seringkali menjadi penghambat. Data yang tersebar, kesulitan dalam memantau kinerja tim, serta risiko kehilangan informasi penting adalah tantangan nyata yang dapat memperlambat pertumbuhan bisnis Anda.
+
+**Ibra Decode** hadir dengan solusi strategis: **Web Aplikasi Simulasi Kelayakan KPR**. Ini bukan sekadar aplikasi, melainkan sebuah investasi bisnis yang dirancang untuk mentransformasi operasional Anda. Kami akan mengubah proses manual menjadi sistem digital yang terpusat, otomatis, dan dapat diakses kapan saja, di mana saja. Proposal ini akan menunjukkan bagaimana solusi kami akan meningkatkan efisiensi operasional, memperkuat pengawasan tim, menjamin keamanan data berharga Anda, dan meletakkan fondasi kokoh untuk pengembangan bisnis properti Anda di masa depan. Kami fokus pada hasil bisnis yang nyata, bukan sekadar teknologi di baliknya.
+
+<div class="page-break"></div>
+
+<h2 id="permasalahan-saat-ini" class="section-header">2. Permasalahan Saat Ini</h2>
+
+Metode simulasi kelayakan KPR yang masih mengandalkan file Excel, meskipun telah lama digunakan, kini menunjukkan keterbatasan yang signifikan dalam mendukung dinamika bisnis properti modern. Berdasarkan pengalaman kami menangani digitalisasi bisnis properti selama lebih dari 15 tahun, kami mengidentifikasi beberapa masalah krusial yang mungkin Anda alami:
+
+<ul class="list-item-bold">
+  <li><strong>Data Tersebar dan Sulit Dipantau:</strong> Informasi penting calon pembeli dan hasil simulasi tersimpan di berbagai file Excel di perangkat tim penjualan. Hal ini menyulitkan Anda sebagai pemilik atau manajer untuk mendapatkan gambaran menyeluruh dan *real-time* mengenai potensi penjualan.</li>
+  <li><strong>Pengawasan Tim yang Tidak Efisien:</strong> Tanpa sistem terpusat, memantau aktivitas tim penjualan dalam melakukan simulasi dan *follow-up* calon pembeli menjadi tugas yang memakan waktu dan tidak efektif. Anda kehilangan visibilitas terhadap kinerja individu dan tim secara keseluruhan.</li>
+  <li><strong>Risiko Kehilangan dan Ketidakamanan Data:</strong> File lokal rentan terhadap kerusakan perangkat, serangan virus, atau bahkan kehilangan data penting yang dapat berdampak serius pada operasional dan reputasi bisnis Anda. Data calon pembeli adalah aset berharga yang harus dilindungi.</li>
+  <li><strong>Kesulitan Rekapitulasi dan Pelaporan:</strong> Proses pengumpulan dan rekapitulasi data dari berbagai sumber untuk laporan manajemen adalah pekerjaan yang membosankan, memakan waktu, dan sangat rentan terhadap kesalahan manusia. Ini menghambat pengambilan keputusan yang cepat dan akurat.</li>
+  <li><strong>Hambatan Pengembangan Jangka Panjang:</strong> Sistem berbasis Excel memiliki batasan inheren untuk diintegrasikan dengan modul bisnis lain atau dikembangkan menjadi platform yang lebih besar dan terintegrasi. Ini membatasi potensi pertumbuhan dan inovasi digital perusahaan Anda.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="solusi-yang-kami-tawarkan" class="section-header">3. Solusi yang Kami Tawarkan</h2>
+
+**Ibra Decode** menawarkan sebuah **Web Aplikasi Simulasi Kelayakan KPR** yang dirancang khusus untuk mengatasi setiap tantangan yang Anda hadapi. Ini adalah solusi digital yang akan menjadi pusat kendali baru bagi proses simulasi KPR perusahaan Anda, dapat diakses secara *online* kapan saja dan dari mana saja. Solusi ini akan:
+
+<ul class="list-item-bold">
+  <li>**Mendigitalisasi dan Mengotomatisasi Proses:** Mengubah alur kerja manual yang rentan kesalahan menjadi proses yang otomatis, terstruktur, dan efisien melalui aplikasi web yang intuitif.</li>
+  <li>**Sentralisasi Data Bisnis:** Seluruh data calon pembeli dan riwayat simulasi akan tersimpan aman dalam satu pusat data digital yang terkelola dengan baik, menghilangkan risiko data tersebar dan memastikan integritas informasi.</li>
+  <li>**Aksesibilitas Tanpa Batas:** Tim Anda dapat mengakses sistem melalui internet, baik dari kantor maupun saat berada di lapangan, menggunakan perangkat apa pun (komputer, laptop, tablet), memastikan fleksibilitas operasional.</li>
+  <li>**Perhitungan Akurat dan Konsisten:** Rumus kelayakan KPR perusahaan Anda akan diimplementasikan secara presisi dalam sistem, mengurangi *human error* dan memastikan setiap simulasi memberikan hasil yang konsisten dan dapat diandalkan.</li>
+  <li>**Peningkatan Pengawasan dan Kontrol:** Anda sebagai pemilik atau manajer akan memiliki visibilitas penuh terhadap aktivitas simulasi dan data penjualan melalui dashboard ringkasan yang informatif, memungkinkan pengawasan yang lebih baik dan pengambilan keputusan yang lebih cepat.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="manfaat-bisnis-yang-akan-diperoleh" class="section-header">4. Manfaat Bisnis yang Akan Diperoleh</h2>
+
+Investasi pada Web Aplikasi Simulasi Kelayakan KPR ini bukan sekadar pengeluaran, melainkan langkah strategis yang akan memberikan pengembalian investasi (ROI) signifikan melalui peningkatan efisiensi dan potensi pertumbuhan bisnis Anda:
+
+<ul class="list-item-bold">
+  <li>**Peningkatan Produktivitas Tim Penjualan:** Tim Anda dapat melakukan simulasi kelayakan KPR dalam hitungan menit, bukan jam. Ini membebaskan waktu berharga mereka untuk fokus pada aktivitas penjualan inti dan memberikan pelayanan pelanggan yang lebih baik, secara langsung meningkatkan potensi pendapatan.</li>
+  <li>**Percepatan Siklus Penjualan Properti:** Dengan hasil simulasi yang cepat dan akurat, Anda dapat segera mengidentifikasi calon pembeli yang paling prospektif dan menentukan langkah *follow-up* yang tepat. Ini akan secara signifikan mempercepat siklus penjualan properti Anda.</li>
+  <li>**Pengambilan Keputusan Strategis Berbasis Data:** Dashboard ringkasan dan laporan yang mudah diakses akan menyajikan data penjualan dan kinerja tim secara *real-time*. Anda dapat membuat keputusan strategis yang lebih tepat dan cepat, mengoptimalkan strategi pemasaran dan penjualan.</li>
+  <li>**Keamanan dan Integritas Data Bisnis Terjamin:** Data calon pembeli adalah aset paling berharga perusahaan Anda. Dengan penyimpanan terpusat di pusat data digital yang aman dan sistem cadangan otomatis, risiko kehilangan atau penyalahgunaan data akan diminimalisir, melindungi investasi informasi Anda.</li>
+  <li>**Peningkatan Akurasi dan Kredibilitas:** Seluruh perhitungan kelayakan KPR dilakukan secara otomatis oleh sistem, menghilangkan potensi kesalahan manusia dan memastikan setiap hasil simulasi akurat serta konsisten. Ini meningkatkan kredibilitas perusahaan Anda di mata calon pembeli dan mitra bank.</li>
+  <li>**Fondasi Kokoh untuk Pertumbuhan Masa Depan:** Sistem ini dibangun dengan arsitektur yang fleksibel dan *scalable*. Ini berarti sistem ini siap untuk diintegrasikan dan dikembangkan dengan modul-modul bisnis lain di masa depan, mendukung ekspansi dan inovasi digital perusahaan Anda tanpa perlu memulai dari nol.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="keunggulan-sistem-kami-dibanding-excel" class="section-header">5. Keunggulan Sistem Kami Dibanding Excel</h2>
+
+Perbandingan ini akan menunjukkan mengapa beralih dari Excel ke Web Aplikasi Simulasi Kelayakan KPR adalah keputusan bisnis yang cerdas:
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspek Kritis</th>
+      <th>Metode Excel (Saat Ini)</th>
+      <th>Web Aplikasi Ibra Decode (Investasi Masa Depan)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Penyimpanan Informasi**</td>
+      <td>Tersebar di berbagai file di perangkat tim, rentan hilang dan sulit dikelola.</td>
+      <td>**Terpusat di pusat data digital**, aman, memiliki cadangan otomatis, dan mudah diakses.</td>
+    </tr>
+    <tr>
+      <td>**Aksesibilitas & Fleksibilitas**</td>
+      <td>Terbatas pada perangkat yang memiliki file, tidak mendukung kerja *mobile* atau jarak jauh.</td>
+      <td>**Dapat diakses dari mana saja** via internet (komputer, laptop, tablet), mendukung tim yang dinamis.</td>
+    </tr>
+    <tr>
+      <td>**Kolaborasi Tim**</td>
+      <td>Sangat sulit untuk dikerjakan bersamaan secara *real-time*, sering terjadi duplikasi data.</td>
+      <td>**Multi-pengguna dengan pembagian hak akses**, memungkinkan kolaborasi yang efisien dan terkoordinasi.</td>
+    </tr>
+    <tr>
+      <td>**Integritas Perhitungan**</td>
+      <td>Rentan terhapus atau dimodifikasi tanpa sengaja oleh pengguna, menyebabkan hasil tidak konsisten.</td>
+      <td>**Perhitungan otomatis dan terkunci dalam sistem**, menjamin akurasi dan konsistensi setiap saat.</td>
+    </tr>
+    <tr>
+      <td>**Pengawasan & Laporan**</td>
+      <td>Membutuhkan pengumpulan data manual dari setiap tim untuk rekapitulasi, proses lambat dan rawan kesalahan.</td>
+      <td>**Dashboard ringkasan *real-time*** dan fitur ekspor data terpusat untuk pengawasan manajemen yang mudah dan cepat.</td>
+    </tr>
+    <tr>
+      <td>**Riwayat & Audit Data**</td>
+      <td>Sulit melacak riwayat perubahan atau simulasi sebelumnya, kurang transparan untuk audit.</td>
+      <td>**Memiliki fitur riwayat simulasi yang terstruktur**, mudah dilacak, dan mendukung proses audit internal.</td>
+    </tr>
+    <tr>
+      <td>**Potensi Pengembangan**</td>
+      <td>Sangat terbatas untuk pengembangan fitur atau integrasi dengan sistem bisnis lain.</td>
+      <td>**Dirancang untuk pertumbuhan**, mudah dikembangkan dengan modul bisnis lain di masa depan, melindungi investasi Anda.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2 id="gambaran-alur-sistem" class="section-header">6. Gambaran Alur Sistem</h2>
+
+Kami memahami bahwa Anda membutuhkan gambaran yang jelas tentang bagaimana sistem ini akan bekerja tanpa harus memahami detail teknis yang rumit. Berikut adalah alur sederhana bagaimana Web Aplikasi Simulasi Kelayakan KPR akan beroperasi:
+
+<div class="image-container">
+  <img src="/home/ubuntu/system_architecture.png" alt="Gambaran Alur Sistem">
+</div>
+
+**Bagaimana Sistem Bekerja untuk Bisnis Anda:**
+- **Tim Anda (Penjualan, Admin, Manajemen):** Mengakses aplikasi melalui peramban web standar (seperti Chrome atau Safari) dari perangkat apa pun yang terhubung internet. Ini memastikan fleksibilitas kerja di kantor maupun di lapangan.
+- **Aplikasi Web Intuitif:** Menyajikan antarmuka yang responsif dan mudah digunakan. Tim penjualan dapat dengan cepat menginput data calon pembeli, menjalankan simulasi, dan melihat hasilnya secara instan.
+- **Pusat Pemrosesan Cerdas:** Di balik layar, sistem akan memproses semua permintaan. Ini termasuk menjalankan perhitungan kelayakan KPR sesuai rumus perusahaan Anda, serta mengelola informasi pengguna dan semua data simulasi.
+- **Pusat Data Digital Aman:** Seluruh informasi calon pembeli, hasil simulasi, dan riwayat akan tersimpan secara aman dan terpusat. Sistem ini dilengkapi dengan cadangan otomatis untuk memastikan data berharga Anda selalu terlindungi dan tersedia.
+
+<div class="page-break"></div>
+
+<h2 id="ruang-lingkup-pekerjaan" class="section-header">7. Ruang Lingkup Pekerjaan</h2>
+
+Kami berkomitmen untuk memberikan solusi yang terdefinisi dengan jelas dan memberikan nilai maksimal bagi investasi Anda. Berikut adalah rincian pekerjaan yang termasuk dan tidak termasuk dalam penawaran komersial ini:
+
+<h3 id="termasuk-dalam-pekerjaan">7.1. Termasuk dalam Pekerjaan (In-Scope)</h3>
+<ul class="list-item-bold">
+  <li>**Analisis Kebutuhan Bisnis:** Pemahaman mendalam tentang alur kerja Anda dan perancangan struktur informasi yang efisien untuk mendukung operasional.</li>
+  <li>**Desain Pengalaman Pengguna:** Perancangan tampilan dan alur aplikasi yang intuitif dan mudah digunakan untuk dashboard serta formulir simulasi.</li>
+  <li>**Pembangunan Aplikasi Web:** Pengembangan penuh solusi digital Anda, termasuk bagian yang terlihat oleh pengguna dan sistem di balik layar yang mengelola semua proses bisnis.</li>
+  <li>**Implementasi Rumus Kelayakan KPR:** Penerjemahan dan implementasi akurat rumus perhitungan kelayakan KPR perusahaan Anda ke dalam sistem otomatis.</li>
+  <li>**Pengaturan Infrastruktur Digital:** Konfigurasi pusat data digital yang handal dan aman untuk hosting aplikasi Anda.</li>
+  <li>**Pengujian Menyeluruh:** Serangkaian pengujian untuk memastikan kualitas, keandalan, dan keamanan sistem sebelum peluncuran.</li>
+  <li>**Peluncuran Sistem:** Proses peluncuran aplikasi ke lingkungan operasional agar siap digunakan oleh tim Anda.</li>
+  <li>**Pelatihan Pengguna:** Sesi pelatihan komprehensif untuk tim admin dan manajer Anda agar dapat mengoperasikan sistem dengan percaya diri.</li>
+  <li>**Garansi Perbaikan Bug 30 Hari:** Jaminan perbaikan gratis untuk setiap bug atau kesalahan sistem yang teridentifikasi dalam 30 hari setelah peluncuran resmi.</li>
+</ul>
+
+<h3 id="tidak-termasuk-dalam-pekerjaan">7.2. Tidak Termasuk dalam Pekerjaan (Out-of-Scope)</h3>
+<ul class="list-item-bold">
+  <li>Pengadaan perangkat keras (komputer, laptop, smartphone) untuk pengguna.</li>
+  <li>Biaya langganan internet di lokasi perusahaan Anda.</li>
+  <li>Integrasi dengan sistem perbankan eksternal (misalnya, koneksi langsung ke sistem bank).</li>
+  <li>Pengembangan fitur di luar daftar fitur Tahap 1 yang telah disepakati dalam proposal ini.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="hak-akses-pengguna" class="section-header">8. Hak Akses Pengguna</h2>
+
+Sistem ini dirancang untuk mendukung sekitar 20 pengguna awal dengan pembagian hak akses yang jelas. Ini memastikan setiap anggota tim memiliki akses yang tepat sesuai tanggung jawabnya, menjaga keamanan data, dan meningkatkan efisiensi operasional:
+
+<table>
+  <thead>
+    <tr>
+      <th>Peran Pengguna</th>
+      <th>Tanggung Jawab & Hak Akses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Master Admin**</td>
+      <td>Memiliki kendali penuh atas seluruh sistem. Bertanggung jawab untuk mengelola akun pengguna, mengatur peran, melihat seluruh data simulasi dari semua tim, dan mengekspor data untuk keperluan audit atau pelaporan strategis.</td>
+    </tr>
+    <tr>
+      <td>**Manajer**</td>
+      <td>Dapat melihat seluruh data simulasi dari semua tim untuk keperluan pengawasan kinerja dan analisis tren. Memiliki akses penuh ke dashboard ringkasan dan dapat mengekspor data untuk laporan manajemen.</td>
+    </tr>
+    <tr>
+      <td>**Admin / Tim Penjualan**</td>
+      <td>Bertanggung jawab untuk menginput data calon pembeli dan menjalankan simulasi kelayakan KPR. Hanya dapat melihat dan mengelola data simulasi yang mereka input sendiri, menjaga privasi dan akuntabilitas individu.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2 id="fitur-utama-sistem-tahap-1" class="section-header">9. Fitur Utama Sistem (Tahap 1)</h2>
+
+Fase pertama pengembangan akan berfokus pada fungsionalitas inti yang paling dibutuhkan untuk mentransformasi proses simulasi KPR Anda. Fitur-fitur ini dirancang untuk memberikan dampak bisnis yang cepat dan signifikan:
+
+<ul class="list-item-bold">
+  <li>**Akses Aman dan Terkelola:** Pengguna dapat masuk ke sistem menggunakan email dan kata sandi yang terdaftar. Sistem juga menyediakan kemampuan untuk mengelola akun pribadi dan mengatur ulang kata sandi.</li>
+  <li>**Manajemen Tim Pengguna:** Admin dapat dengan mudah membuat, memperbarui, dan menonaktifkan akun pengguna, serta mengatur hak akses mereka sesuai peran dalam organisasi Anda.</li>
+  <li>**Simulasi Kelayakan KPR Otomatis:** Formulir input yang terstruktur dan mudah digunakan untuk data calon pembeli (penghasilan, cicilan berjalan, status keluarga, tenor KPR). Sistem akan secara otomatis menjalankan perhitungan kelayakan KPR berdasarkan rumus perusahaan Anda.</li>
+  <li>**Analisis Hasil Instan dan Rekomendasi:** Sistem akan menampilkan hasil penting seperti kapasitas pembayaran, rasio utang terhadap pendapatan, status Lulus/Tidak Lulus, identifikasi masalah potensial (misalnya, cicilan terlalu besar), dan rekomendasi solusi (misalnya, perpanjang tenor, tambah uang muka).</li>
+  <li>**Pusat Data & Riwayat Simulasi:** Seluruh data simulasi tersimpan secara permanen di pusat data digital yang aman, lengkap dengan riwayat yang mudah dicari dan diakses untuk referensi di masa mendatang.</li>
+  <li>**Dashboard Ringkasan Kinerja:** Tampilan visual yang menyajikan statistik jumlah simulasi yang telah dilakukan dan ringkasan status kelulusan. Ini memberikan gambaran cepat tentang kinerja tim dan tren penjualan.</li>
+  <li>**Ekspor Data Fleksibel:** Kemampuan untuk mengunduh data simulasi ke format Excel (.xlsx) untuk kebutuhan pelaporan eksternal atau analisis lebih lanjut oleh tim Anda.</li>
+  <li>**Infrastruktur Digital Handal:** Sistem akan berjalan di pusat data digital yang aman dan terukur, dilengkapi dengan sistem cadangan data berkala untuk menjamin ketersediaan dan keamanan informasi bisnis Anda.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="timeline-pengerjaan" class="section-header">10. Timeline Pengerjaan</h2>
+
+Kami berkomitmen untuk menyelesaikan proyek ini secara efisien dan tepat waktu, memastikan Anda dapat segera merasakan manfaat digitalisasi. Estimasi waktu pengerjaan untuk Tahap 1 adalah **3 Minggu**, dengan rincian tahapan sebagai berikut:
+
+<table class="timeline-table">
+  <thead>
+    <tr>
+      <th>Minggu</th>
+      <th>Tahapan Kunci Proyek</th>
+      <th>Hasil yang Akan Anda Terima (Deliverables)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Minggu 1**</td>
+      <td>**Perencanaan Strategis & Desain Awal:**<br>- Diskusi mendalam untuk memahami alur bisnis dan rumus kelayakan KPR Anda.<br>- Perancangan struktur pusat data yang optimal.<br>- Desain tampilan aplikasi (UI/UX) yang intuitif dan menarik.</td>
+      <td>Dokumen Spesifikasi Kebutuhan Bisnis, Desain Tampilan Aplikasi yang disetujui.</td>
+    </tr>
+    <tr>
+      <td>**Minggu 2**</td>
+      <td>**Pembangunan Sistem Inti:**<br>- Pembangunan logika bisnis dan pusat data yang kokoh.<br>- Pembangunan antarmuka aplikasi yang responsif.<br>- Integrasi seluruh komponen sistem untuk fungsionalitas penuh.</td>
+      <td>Aplikasi versi awal (Beta) dengan fungsionalitas inti yang dapat diuji coba.</td>
+    </tr>
+    <tr>
+      <td>**Minggu 3**</td>
+      <td>**Pengujian, Peluncuran & Pelatihan:**<br>- Pengujian kualitas menyeluruh dan perbaikan jika ada.<br>- Sesi pengujian oleh tim Anda (User Acceptance Test).<br>- Peluncuran aplikasi ke lingkungan operasional.<br>- Pelatihan komprehensif untuk tim Anda agar mahir menggunakan sistem.</td>
+      <td>Aplikasi siap digunakan (Live), Berita Acara Serah Terima Proyek.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2 id="investasi-dan-ketentuan-pembayaran" class="section-header">11. Investasi dan Ketentuan Pembayaran</h2>
+
+Kami menawarkan investasi yang transparan dan kompetitif untuk solusi digital yang akan membawa efisiensi signifikan serta nilai jangka panjang bagi bisnis Anda.
+
+<h3 id="rincian-investasi">11.1. Rincian Investasi</h3>
+
+Berikut adalah rincian biaya investasi untuk pengembangan Web Aplikasi Simulasi Kelayakan KPR (Tahap 1):
+
+<div class="pricing-card">
+  <h3>Paket Pengembangan Sistem (Tahap 1)</h3>
+  <div class="price-detail">
+    <span>Harga Normal Pengembangan Sistem</span>
+    <span>**Rp 6.000.000**</span>
+  </div>
+  <div class="price-detail">
+    <span>Diskon Referensi (Pak Koko) - 20%</span>
+    <span>**(Rp 1.200.000)**</span>
+  </div>
+  <div class="total-price">
+    <span>Total Harga Penawaran Khusus</span>
+    <span>**Rp 4.800.000**</span>
+  </div>
+  <p style="text-align: center; margin-top: 1.5em; font-size: 0.9em; color: #777;">*Catatan: Harga di atas sudah termasuk biaya hosting pusat data digital dan nama domain untuk tahun pertama.</p>
+</div>
+
+<h3 id="ketentuan-pembayaran">11.2. Ketentuan Pembayaran</h3>
+
+<div class="payment-terms">
+  <p>Pembayaran dilakukan dalam 2 (dua) termin untuk menjaga komitmen dan kelancaran proyek:</p>
+  <ul>
+    <li>**Termin 1 (Uang Muka): 50%** - Sebesar **Rp 2.400.000** dibayarkan pada saat penandatanganan kontrak atau persetujuan proposal, sebelum pekerjaan dimulai.</li>
+    <li>**Termin 2 (Pelunasan): 50%** - Sebesar **Rp 2.400.000** dibayarkan setelah sistem selesai dikembangkan, diuji coba oleh tim Anda, dan siap digunakan secara penuh, ditandai dengan penandatanganan Berita Acara Serah Terima.</li>
+  </ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2 id="garansi-dan-ketentuan-revisi" class="section-header">12. Garansi dan Ketentuan Revisi</h2>
+
+Kami menjamin kualitas dan fungsionalitas sistem yang kami bangun, memberikan Anda ketenangan pikiran dalam investasi ini:
+
+<ul class="list-item-bold">
+  <li>**Garansi Perbaikan Bug 30 Hari:** Kami memberikan garansi penuh untuk perbaikan bug atau kesalahan sistem yang muncul dalam 30 hari kalender setelah tanggal peluncuran resmi. Perbaikan ini akan dilakukan tanpa biaya tambahan, memastikan sistem Anda berjalan optimal.</li>
+  <li>**Ketentuan Revisi:** Revisi minor pada desain atau fungsionalitas yang tidak mengubah lingkup pekerjaan utama dapat didiskusikan dan akan kami akomodasi selama masa pengembangan. Setiap revisi mayor yang mengubah lingkup pekerjaan secara signifikan akan memerlukan penyesuaian jadwal dan biaya, yang akan kami komunikasikan secara transparan.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 id="roadmap-pengembangan-sistem-jangka-panjang" class="section-header">13. Roadmap Pengembangan Sistem Jangka Panjang</h2>
+
+Web Aplikasi Simulasi Kelayakan KPR ini adalah langkah awal yang strategis. Kami telah merancang arsitekturnya agar fleksibel dan siap untuk pengembangan lebih lanjut, menjadikannya bagian integral dari ekosistem digital perusahaan Anda di masa depan. Berikut adalah visi kami untuk evolusi sistem ini:
+
+<div class="roadmap-section">
+  <div class="roadmap-card">
+    <h4>Fase 2: Manajemen Unit Properti & Penjualan</h4>
+    <ul>
+      <li>Visualisasi *Siteplan Digital* interaktif untuk memudahkan pemilihan unit.</li>
+      <li>Pemantauan status unit properti secara *real-time* (*Available, Booking, Sold Out*).</li>
+      <li>Integrasi hasil simulasi KPR langsung dengan proses pemesanan unit properti.</li>
+    </ul>
+  </div>
+  <div class="roadmap-card">
+    <h4>Fase 3: Pengelolaan Hubungan Pelanggan (CRM)</h4>
+    <ul>
+      <li>Manajemen *Leads* calon pembeli secara terpusat dan terstruktur.</li>
+      <li>Pelacakan *Follow Up* oleh tim penjualan secara otomatis dan terintegrasi.</li>
+      <li>Dashboard khusus untuk memantau performa tim pemasaran dan penjualan.</li>
+    </ul>
+  </div>
+  <div class="roadmap-card">
+    <h4>Fase 4: Digitalisasi Dokumen & Administrasi</h4>
+    <ul>
+      <li>Fitur unggah dan penyimpanan dokumen persyaratan KPR nasabah secara digital.</li>
+      <li>Manajemen dokumen KPR yang terintegrasi dan mudah diakses.</li>
+      <li>Digitalisasi berkas untuk mengurangi penggunaan kertas dan meningkatkan efisiensi administrasi.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<h2 id="penutup-profesional" class="section-header">14. Penutup Profesional</h2>
+
+Dengan hormat, kami dari **Ibra Decode** menyampaikan proposal penawaran komersial premium ini. Kami sangat yakin bahwa implementasi Web Aplikasi Simulasi Kelayakan KPR ini akan menjadi **investasi strategis yang krusial** bagi perusahaan Anda. Ini adalah langkah fundamental untuk mencapai efisiensi operasional yang lebih tinggi, meningkatkan akurasi data, memperkuat pengawasan tim, dan secara signifikan mempercepat proses penjualan properti Anda.
+
+Kami, dengan pengalaman lebih dari 15 tahun dalam digitalisasi bisnis properti, berkomitmen untuk menjadi mitra teknologi terpercaya Anda. Kami akan menyediakan solusi yang tidak hanya memenuhi kebutuhan Anda saat ini, tetapi juga mendukung visi jangka panjang dan pertumbuhan berkelanjutan perusahaan Anda. Kami sangat antusias untuk mendiskusikan lebih lanjut bagaimana solusi ini dapat disesuaikan secara spesifik dengan kebutuhan unik bisnis Anda. Jangan ragu untuk menghubungi kami untuk sesi presentasi atau diskusi lebih mendalam.
+
+Terima kasih atas waktu dan pertimbangan berharga Anda. Kami menantikan kesempatan untuk berkolaborasi dan membawa inovasi digital yang transformatif ke perusahaan Anda.
+
+<div class="footer-section">
+  <p>*Hormat Kami,*</p>
+  <p><strong>Ibra Ramdan</strong></p>
+  <p class="branding">**Ibra Decode**</p>
+  <p>*Senior Business Consultant & Software House Owner*</p>
+  <p style="margin-top: 1em;">Email: support@ibracode.dev | Telepon: +62 857 9282 0173</p>
+</div>
+
+</div>
+</body>
+</html>
